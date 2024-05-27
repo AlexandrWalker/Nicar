@@ -306,7 +306,11 @@
                       "beforeend",
                       `<li class="address__item">
                         <p class="address__item-city">${cityName[i].text}</p>
-                        <p class="address__item-address">${cityName[i].address}
+                        <p class="address__item-address">
+                          <span>
+                            <svg class="icon__pin" width="15" height="20"><use xlink:href="#pin"></use></svg>
+                            ${cityName[i].address}
+                          </span>
                           <a class="address__item-btn" href="https://nicar.store/?FranchiseeId=${cityName[i].id}">Выбрать</a>
                         </p>
                         <a class="address__item-link" href="tel:${cityName[i].tel.replace(/[^0-9,+]/g, "")}">${cityName[i].tel}</a>

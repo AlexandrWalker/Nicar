@@ -183,14 +183,14 @@ body {
   padding: 10px 15px;
   border-radius: 10px;
   background: transparent;
-  border: 1px solid #4b4b4b;
+  border: 1px solid #FFD700;
   color: #000;
   cursor: pointer;
 }
 
 .modal__tab.tab-active {
-  background: red;
-  border-color: red;
+  background: #FFD700;
+  border-color: #FFD700;
   color: #fff;
 }
 
@@ -335,9 +335,16 @@ body {
 .address__item-address {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  align-items: center;
+  gap: 10px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.address__item-address span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .address__item-btn {
@@ -347,16 +354,16 @@ body {
   padding: 5px 10px;
   border-radius: 10px;
   border: 2px solid #f50400;
-  background: #f50400;
-  color: #fff;
+  background: transparent;
+  color: #f50400;
   font-weight: 700;
   font-size: 16px;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .address__item-btn:hover {
-  color: #f50400;
-  background: transparent;
+  background: #f50400;
+  color: #fff;
 }
 
 .address__item-link {
@@ -370,6 +377,11 @@ body {
 }
 
 .address__item-link:hover {
+  color: #f50400;
+}
+
+.icon__pin {
+  min-width: 15px;
   color: #f50400;
 }
 
